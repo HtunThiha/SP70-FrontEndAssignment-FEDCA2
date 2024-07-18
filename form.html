@@ -82,7 +82,7 @@
 
 <div id="display-name"></div>
 
-	<div class="container-fluid col-md-8 col-lg-6 col-xl-4 my-5" id="form-container">
+	<div class="container-fluid col-md-8 col-lg-6 col-xl-5 my-5" id="form-container">
 
         <form class="px-5" onsubmit="displaySecondPage(event)">
             <div class="mb-3" id="form-section">
@@ -142,13 +142,23 @@
 				<!-- shows input required when field is not filled -->
 				<p class="error-message" id="error-message4"></p>
             </div>
+
+
+
+
+
 			</div>
-
-
-            <div class="mb-3 form-check" id="form-section">
+			<div class="mb-3 form-floating">
+				<textarea class="form-control" placeholder="Leave a comment here" id="input-wish-text" style="height: 100px;"></textarea>
+				<label for="input-wish-text">Wish regarding SP's 70th Anniversary! 🤗✨</label>
+				<!-- shows input required when field is not filled -->
+				<p class="error-message" id="error-message5"></p>
+			  </div>
+			  <div class="mb-3 form-check" id="form-section">
                 <input type="checkbox" class="form-check-input" id="emailCheck">
                 <label class="form-check-label" for="emailCheck">I'd like to receive an email of this response.</label>
             </div>
+
             <button type="submit" class="btn btn-primary col-12">
 				<span>Submit</span>
 					<span class="spinner-border spinner-border-sm" role="status" id="loading-animation" style="display: none;"></span>
