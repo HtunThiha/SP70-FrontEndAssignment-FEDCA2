@@ -8,6 +8,7 @@ function displaySecondPage(event) {
     var studentFalse = document.getElementById('input-student-no').checked;
     var studentID = document.getElementById('input-student-id').value;
     var iChatEmail = document.getElementById('input-ichat-email').value;
+    var wish = document.getElementById('input-wish-text').value;
     var mailRequire = document.getElementById('emailCheck').checked;
 
     var errorCount = 0;
@@ -44,6 +45,11 @@ function displaySecondPage(event) {
     }
     else {
         var studentStatus = false;
+    }
+
+    if (wish == "") {
+        document.getElementById('error-message5').innerHTML = errorMessage;
+        errorCount++;
     }
 
     if (errorCount == 0) {
