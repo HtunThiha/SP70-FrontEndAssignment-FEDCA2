@@ -11,13 +11,27 @@
 	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
 		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
 		crossorigin="anonymous"></script>
+
 	<!-- bootstrap icons link -->
 	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
 	<!-- css link to index.css and general.css-->
 	<link rel="stylesheet" href="css/index.css">
 	<link rel="stylesheet" href="css/general.css">
+
+	<!-- catamaran font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+
+	<!-- roboto slab font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
 	<!-- tab icon -->
 	<link rel="icon" type="image/x-icon" href="images/sp70-title-thumbnail.png">
+
 	<!-- page title -->
 	<title>SP70 | Commemoration 🎉</title>
 </head>
@@ -82,17 +96,32 @@
 	</header>
 
 	<!-- hero-image -->
+	 <!-- hero image background in css -->
 	<div class="container-fluid hero-image position-relative">
-		<div class="hero-text position-absolute">
+		<!-- title and subtitle centered in hero image -->
+		<div class="hero-text position-absolute roboto-slab">
 			<h1>Celebrating 70 Years of SP</h1>
-			<p>Helping Future Generations Thrive for Decades</p>
 		</div>
 	</div>
 
 
-	<div class="container-fluid col-10 col-md-10 col-lg-8">
-		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 d-flex justify-content-center align-items-center">
-			<div class="col">
+	<div class="container-fluid col-10 mt-3 mb-5">
+		<div class="row">
+			<div class="d-flex justify-content-center align-items-center">
+				<img src="images/sp70-icon.jpg" alt="" class="col-10 col-sm-8 col-md-6 col-lg-4">
+			</div>
+			<div class="p-3 d-flex justify-content-center text-center fs-5 lh-base">What began in a humble five-storey building on Prince Edward Road grew into Singapore's largest polytechnic—a sprawling campus spanning 38 hectares of lush greenery and over 230,000 esteemed alumni. Our 70-year milestone in 2024 is a moment of reflection and celebration, but also the beginning of our next era, with more to discover and more to accomplish. This is SP at 70.</div>
+		</div>
+	</div>
+
+	<!-- container of overview section -->
+	<div class="container-fluid col-12 col-md-10 my-5 p-5" id="statistics">
+		<h2 class="text-center text-white bg-danger py-2 mb-5 roboto-slab" id="statistics-title"><i class="bi bi-bar-chart-fill"></i>&ensp;SP Statistics</h2>
+		<!-- row section, and each column contains an icon and an overview text section.
+		 1 column in small, 2 columns in medium, and 3 columns in large view-widths,
+		 aligns each column to center  -->
+		<div class="row row-cols-1 row-cols-md-2 row-cols-xl-3 gx-5 gy-5 d-flex justify-content-center align-items-center">
+			<div class="col col-xl-3">
 				<div class="row">
 					<div class="col-4 d-flex justify-content-center align-items-center"><img src="images/established_thumbnail.png" alt=""></div>
 					<div class="col-8 d-flex align-items-center">
@@ -103,7 +132,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col">
+			<div class="col col-xl-5">
 				<div class="row">
 					<div class="col-4 d-flex justify-content-center align-items-center"><img src="images/courses-thumbnail.png" alt=""></div>
 					<div class="col-8 d-flex align-items-center">
@@ -117,7 +146,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col">
+			<div class="col col-xl-4">
 				<div class="row">
 					<div class="col-4 d-flex justify-content-center align-items-center"><img src="images/staff-thumbnail.png" alt=""></div>
 					<div class="col-8 d-flex align-items-center">
@@ -130,7 +159,7 @@
 					</div>
 				</div>
 			</div>
-			<div class="col">
+			<div class="col col-xl-5">
 				<div class="row">
 					<div class="col-4 d-flex justify-content-center align-items-center"><img src="images/enrolment-thumbnail.png" alt=""></div>
 					<div class="col-8 d-flex align-items-center">
@@ -143,23 +172,12 @@
 					</div>
 				</div>
 			</div>
-			<div class="col">
+			<div class="col col-md-12 col-xl-7">
 				<div class="row">
-					<div class="col-4 d-flex justify-content-center align-items-center"><img src="images/campus-thumbnail.png" alt=""></div>
-					<div class="col-8 d-flex align-items-center">
-						<ul>
-							<h6>OUR CAMPUS</h6>
-							<li>38-hectares of lush greenery</li>
-						</ul>
-					</div>
-				</div>
-			</div>
-			<div class="col">
-				<div class="row">
-					<div class="col-4 d-flex justify-content-center align-items-center"><img src="images/schools-thumbnail.png" alt=""></div>
-					<div class="col-8 d-flex align-items-center">
+					<div class="col-3 d-flex justify-content-center align-items-center"><img src="images/schools-thumbnail.png" alt=""></div>
+					<div class="col-9 d-flex align-items-center">
 						<ol>
-							<h6>10 ACADEMIC SCHOOLS</h6>
+							<h6>ACADEMIC SCHOOLS</h6>
 							<li>School of Architecture & Built Environment</li>
 							<li>School of Business</li>
 							<li>School of Computing</li>
@@ -171,6 +189,17 @@
 							<li>School of Mechanical & Aeronautical Engineering</li>
 							<li>School of Singapore Maritime Academy</li>
 						</ol>
+					</div>
+				</div>
+			</div>
+			<div class="col">
+				<div class="row">
+					<div class="col-4 d-flex justify-content-center align-items-center"><img src="images/campus-thumbnail.png" alt=""></div>
+					<div class="col-8 d-flex align-items-center">
+						<ul>
+							<h6>OUR CAMPUS</h6>
+							<li>38-hectares of lush greenery</li>
+						</ul>
 					</div>
 				</div>
 			</div>
@@ -199,6 +228,14 @@
 			</div>
 		</div>
 	</div>
+
+		<h1 class="text-center roboto-slab">Our Vision</h1>
+		<h5 class="text-center px-5" id="vision-subtitle"><span class="text-danger">A caring community</span> of <span class="text-primary"> inspired learners</span> committed to <span class="text-warning">serve with mastery.</span></h5>
+		<!-- vision image container -->
+		<div class="text-center mt-4 mb-5">
+			<!-- vision image -->
+	  		<img src="images/sp-vision.png" class="col-10 col-md-8 col-lg-6 p-5" id="img-mission-vision" alt="">
+		</div>
 
 	<!-- footer background-->
 	<footer class="container-fluid text-white d-flex justify-content-center">
@@ -247,9 +284,9 @@
 					<div class="text-start d-none d-lg-block col-lg-4">
 						<!-- contact info -->
 						<p class="mb-3">Singapore Polytechnic</p>
-						<p class="my-1" id="contact-info"><i class="bi bi-geo-alt-fill"></i>500 Dover Road Singapore 139651</p>
-						<p class="my-1" id="contact-info"><i class="bi bi-telephone-fill"></i>&nbsp;<a href="tel:+6567751133">+65 67751133</a></p>
-						<p class="mt-1 mb-3" id="contact-info"><i class="bi bi-envelope-at-fill"></i>&nbsp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>		
+						<p class="my-1" id="contact-info"><i class="bi bi-geo-alt-fill"></i>&ensp;500 Dover Road Singapore 139651</p>
+						<p class="my-1" id="contact-info"><i class="bi bi-telephone-fill"></i>&ensp;<a href="tel:+6567751133">+65 67751133</a></p>
+						<p class="mt-1 mb-3" id="contact-info"><i class="bi bi-envelope-at-fill"></i>&ensp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>		
 					</div>
 					<!-- other links -->
 					<div class="text-center text-lg-end col-lg-8">
@@ -274,3 +311,9 @@
 </body>
 
 </html>
+
+
+<!-- Image sources:
+ 1. The Singapore Polytechnic Report 1954 - Source: wikipedia data:image/jpeg;base64,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
+ 2. Prine Edward Campus - Source: Flickr https://www.google.com/url?sa=i&url=https%3A%2F%2Fwww.flickr.com%2Fphotos%2Fsingaporepolytechnic%2F12940393774&psig=AOvVaw1MvXUURGvpCuDzVHxI00T8&ust=1721373286671000&source=images&cd=vfe&opi=89978449&ved=0CBEQjRxqFwoTCIiml6yFsIcDFQAAAAAdAAAAABAn
+  -->
