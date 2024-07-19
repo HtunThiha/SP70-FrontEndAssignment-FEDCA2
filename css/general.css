@@ -1,4 +1,18 @@
+/* roboto-slab font */
+.roboto-slab {
+  font-family: "Roboto Slab", serif;
+  font-optical-sizing: auto;
+  font-weight: 600;
+  font-style: normal;
+}
 
+/* catamaran font */
+.catamaran {
+  font-family: "Catamaran", sans-serif;
+  font-optical-sizing: auto;
+  font-weight: 500;
+  font-style: normal;
+}
 
 /* active navbutton of respective homepage has invisible box-shadow border at bottom */
 #active-navbutton {
@@ -23,22 +37,23 @@ footer {
 
 /* footer icon hover animation */
 #footer-icon:hover {
-    transform: scale(1.5);
-    transition: 0.5s;
+    transform: scale(1.5);  /* increase the size by 1.5 */
+    transition: 0.5s;   /* animation 0.5s */
 }
 
 /* small the text size of links in footer and contact info */
 #footer-link, #contact-info {
     font-size: 13px;
-    text-decoration: none;
+    text-decoration: none;  /* removes underlines */
 }
 
 /* shows underline after hovering footer-links */
 #footer-link:hover {
-    text-decoration: underline;
+    text-decoration: underline; /* underline after hover */
 }
 
-/* removing the blue color of texts tagged by a element */
+/* removing the blue color and underline of texts tagged by "a" element */
 a {
     color: white;
+    text-decoration: none;
 }
