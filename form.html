@@ -25,7 +25,7 @@
 
 <body>
 	<!-- header with header logo and navbar -->
-	<header>
+	<header id="header">
 		<!-- container with the logo -->
 		<div class="container-fluid mt-3 mb-3">
 			<div class="row">
@@ -80,9 +80,10 @@
 		</nav>
 	</header>
 
-<div id="display-name"></div>
+	
 
-	<div class="container-fluid col-md-8 col-lg-6 col-xl-5 my-5" id="form-container">
+
+	<div class="container-fluid col-md-8 col-lg-6 col-xl-5 my-5 py-5" id="before-submit">
 
         <form class="px-5" onsubmit="displaySecondPage(event)">
             <div class="mb-3" id="form-section">
@@ -113,7 +114,7 @@
             </select>
 			<div class="mb-3" id="form-section">
 				<label for="input-student-yes" class="form-label">Are you a student of SP?</label>
-			<div class="form-check">
+				<div class="form-check">
 				<input class="form-check-input" type="radio" name="student-radio" id="input-student-yes" onclick="showStudentForm('yes');">
 				<label class="form-check-label" for="input-student-yes">
 				  Yes
@@ -124,48 +125,52 @@
 				<label class="form-check-label" for="input-student-no">
 				  No
 				</label>
-				<!-- shows input required when field is not filled -->
-				<p class="error-message" id="error-message-check"></p>
 			  </div>
+				<!-- shows input required when field is not filled -->
+			  <p class="error-message" id="error-message-check"></p>
+
 			  </div>
 
-			<div id="extra-field" style="display: none;">
+			<div class="my-3" id="extra-field" style="display: none;">
 			<div class="mb-3">
                 <label for="input-student-id" class="form-label">Student ID</label>
                 <input type="text" class="form-control" placeholder="Enter your student ID" id="input-student-id">
 				<!-- shows input required when field is not filled -->
-				<p class="error-message" id="error-message3"></p>
+				<p class="error-message" id="error-message-check1"></p>
             </div>
             <div class="mb-3">
-                <label for="input-ichat-email" class="form-label">SP iChat Email</label>
+                <label for="input-ichat-email" class="form-label">SP iChat email</label>
                 <input type="email" class="form-control" placeholder="name@ichat.sp.edu.sg" id="input-ichat-email">
 				<!-- shows input required when field is not filled -->
-				<p class="error-message" id="error-message4"></p>
+				<p class="error-message" id="error-message-check2"></p>
             </div>
-
-
-
-
 
 			</div>
 			<div class="mb-3 form-floating">
 				<textarea class="form-control" placeholder="Leave a comment here" id="input-wish-text" style="height: 100px;"></textarea>
 				<label for="input-wish-text">Wish regarding SP's 70th Anniversary! 🤗✨</label>
 				<!-- shows input required when field is not filled -->
-				<p class="error-message" id="error-message5"></p>
+				<p class="error-message" id="error-message3"></p>
 			  </div>
 			  <div class="mb-3 form-check" id="form-section">
                 <input type="checkbox" class="form-check-input" id="emailCheck">
                 <label class="form-check-label" for="emailCheck">I'd like to receive an email of this response.</label>
             </div>
-
-            <button type="submit" class="btn btn-primary col-12">
+			<div class="text-end">
+			<button type="button" class="btn btn-secondary me-2 mb-3" onclick="refreshInputs(event)"><i class="bi bi-arrow-clockwise"></i>&ensp;Refresh</button>
+			</div>
+			<div class="text-center">
+            <button type="submit" class="btn btn-primary col-4 mx-auto" id="submit-button">
 				<span>Submit</span>
-					<span class="spinner-border spinner-border-sm" role="status" id="loading-animation" style="display: none;"></span>
-				
 			</button>
+			
+			</div>
         </form>
     </div>
+
+	<!-- div container in which second page will add into after submitting the form -->
+	<div class="container col-md-8 col-lg-6 col-xl-5 my-5 py-5" id="after-submit"></div>
+
 
 
 
@@ -216,9 +221,9 @@
 					<div class="text-start d-none d-lg-block col-lg-4">
 						<!-- contact info -->
 						<p class="mb-3">Singapore Polytechnic</p>
-						<p class="my-1" id="contact-info"><i class="bi bi-geo-alt-fill"></i>500 Dover Road Singapore 139651</p>
-						<p class="my-1" id="contact-info"><i class="bi bi-telephone-fill"></i>&nbsp;<a href="tel:+6567751133">+65 67751133</a></p>
-						<p class="mt-1 mb-3" id="contact-info"><i class="bi bi-envelope-at-fill"></i>&nbsp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>		
+						<p class="my-1" id="contact-info"><i class="bi bi-geo-alt-fill"></i>&ensp;500 Dover Road Singapore 139651</p>
+						<p class="my-1" id="contact-info"><i class="bi bi-telephone-fill"></i>&ensp;<a href="tel:+6567751133">+65 67751133</a></p>
+						<p class="mt-1 mb-3" id="contact-info"><i class="bi bi-envelope-at-fill"></i>&ensp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>		
 					</div>
 					<!-- other links -->
 					<div class="text-center text-lg-end col-lg-8">
