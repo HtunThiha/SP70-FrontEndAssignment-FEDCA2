@@ -81,7 +81,29 @@
 	</header>
 
 
-	<footer class="container-fluid text-white d-flex justify-content-center" style="position: absolute; bottom: 0;">
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+		  <div class="col-12 video-container">
+			<video autoplay loop muted class="d-none d-md-block">
+			  <source src="videos/sustainability-banner-video.mp4" type="video/mp4">
+			  <!-- Include other video sources here for compatibility -->
+			  Your browser does not support the video tag.
+			</video>
+			<video autoplay loop muted class="d-md-none">
+				<source src="videos/sustainability-banner-video-cropped.mp4" type="video/mp4">
+				<!-- Include other video sources here for compatibility -->
+				Your browser does not support the video tag.
+			  </video>
+			<div class="overlay-text">
+			<h5 style="color: #196512;">Sustainability matters</h5>
+			  <h4>Progress in Mind<br>
+			  Sustainability in Heart</h4>
+			</div>
+		  </div>
+		</div>
+	  </div>
+
+	<footer class="container-fluid text-white d-flex justify-content-center">
 		<!-- container with different widths for different view-widths-->
 		<div class="container col col-lg-10 col-xl-8">
 			<!-- image and contact-info for under medium view-widths -->
@@ -127,18 +149,18 @@
 					<div class="text-start d-none d-lg-block col-lg-4">
 						<!-- contact info -->
 						<p class="mb-3">Singapore Polytechnic</p>
-						<p class="my-1" id="contact-info"><i class="bi bi-geo-alt-fill"></i>500 Dover Road Singapore 139651</p>
-						<p class="my-1" id="contact-info"><i class="bi bi-telephone-fill"></i>&nbsp;<a href="tel:+6567751133">+65 67751133</a></p>
-						<p class="mt-1 mb-3" id="contact-info"><i class="bi bi-envelope-at-fill"></i>&nbsp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>		
+						<p class="my-1" id="contact-info"><i class="bi bi-geo-alt-fill"></i>&ensp;500 Dover Road Singapore 139651</p>
+						<p class="my-1" id="contact-info"><i class="bi bi-telephone-fill"></i>&ensp;<a href="tel:+6567751133">+65 67751133</a></p>
+						<p class="mt-1 mb-3" id="contact-info"><i class="bi bi-envelope-at-fill"></i>&ensp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>		
 					</div>
 					<!-- other links -->
 					<div class="text-center text-lg-end col-lg-8">
 						<a href="https://tech.gov.sg/report_vulnerability" id="footer-link">Report
-							Vulnerability</a>&nbsp;&nbsp;/&nbsp;
+							Vulnerability</a>&ensp;/&nbsp;
 						<a href="https://www.sp.edu.sg/sp/privacy-statement" id="footer-link">Privacy
-							Statement</a>&nbsp;&nbsp;/&nbsp;
+							Statement</a>&ensp;/&nbsp;
 						<a href="https://www.sp.edu.sg/sp/terms-of-use" id="footer-link">Terms of
-							Use</a>&nbsp;&nbsp;/&nbsp;
+							Use</a>&ensp;/&nbsp;
 						<a href="https://www.sp.edu.sg/sp/sitemap" id="footer-link">Sitemap</a>
 					</div>
 				</div>
