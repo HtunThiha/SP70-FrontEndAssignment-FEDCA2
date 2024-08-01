@@ -1,0 +1,420 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+	<!-- bootstrap css and js links -->
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet"
+		integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+	<script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+		integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+		crossorigin="anonymous"></script>
+
+	<!-- bootstrap icons link -->
+	<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.0/font/bootstrap-icons.css">
+
+	<!-- css links to achievement-plans.css and general.css-->
+	<link rel="stylesheet" href="css/achievement-plans.css">
+	<link rel="stylesheet" href="css/general.css">
+
+	<!-- js links to achievement-plans.js and general.js-->
+	<script src="js/achievement-plans.js" defer></script>
+	<script src="js/general.js" defer></script>
+
+	<!-- catamaran font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Catamaran:wght@100..900&display=swap" rel="stylesheet">
+
+	<!-- roboto slab font -->
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Roboto+Slab:wght@100..900&display=swap" rel="stylesheet">
+
+	<!-- tab icon -->
+	<link rel="icon" type="image/x-icon" href="media/images/general/sp70-title-logo.png">
+
+	<!-- page title -->
+	<title>SP70 | Achievements & Future Insights 🏆</title>
+</head>
+
+<body>
+
+	<!-- header with header logo and navbar -->
+	<header>
+		<!-- container with the logo -->
+		<div class="container-fluid mt-3 mb-3">
+			<div class="row">
+				<!-- header logo with different column sizes on different view-widths -->
+				<a href="https://www.sp.edu.sg/sp70">
+					<img src="media/images/general/sp70-header-thumbnail.png"
+						class="mx-auto d-block col-8 col-sm-6 col-md-4 col-lg-3" alt="SP70">
+				</a>
+			</div>
+		</div>
+
+		<!-- navbar that expands in md breakpoint -->
+		<nav class="navbar navbar-expand-md bg-secondary-subtle py-0" id="navbar">
+			<div class="container-md">
+				<!-- navbar brand image with link to SP official -->
+				<a class="navbar-brand" href="https://www.sp.edu.sg">
+					<img src="media/images/general/sp-navbar-logo.png" class="py-1 py-sm-1 py-md-0 py-lg-0 py-xl-0"
+						alt="SP" width="50">
+				</a>
+				<!-- navbar toggle button in small view-widths -->
+				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+					aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+					<span class="navbar-toggler-icon"></span>
+				</button>
+				<div class="collapse navbar-collapse" id="navbarNav">
+					<!-- three navbar buttons with icon and text -->
+					<ul class="nav nav-tabs navbar-nav">
+						<!-- home navbar button -->
+						<li class="nav-item inactive-navbutton">
+							<a class="nav-link px-3 py-3" href="index.html">
+								<i class="bi bi-house"></i>
+								&nbsp;Home
+							</a>
+						</li>
+						<!-- achievements and plans navbar button -->
+						<li class="nav-item active-navbutton">
+							<a class="nav-link active bg-dark text-white px-3 py-3" aria-current="page"
+								href="achievement-plans.html">
+								<i class="bi bi-trophy"></i>
+								&nbsp;Achievements & Future Plans
+							</a>
+						</li>
+						<!-- feedback form button -->
+						<li class="nav-item inactive-navbutton">
+							<a class="nav-link px-3 py-3" href="form.html">
+								<i class="bi bi-envelope-paper-heart"></i>
+								&nbsp;Send Your Wishes
+							</a>
+						</li>
+					</ul>
+				</div>
+				<!-- clock at the right end of the navbar in large view-widths -->
+				<div class="text-end d-none d-lg-block">
+					<div class="row text-start">
+						<!-- placeholder for current date -->
+						<div class="col-7 offset-5"><i class="bi bi-calendar-week"></i>&ensp;<span
+								id="current-date-wday"></span></div>
+						<!-- placeholder for current time -->
+						<div class="col-7 offset-5"><i class="bi bi-clock"></i>&ensp;<span id="current-time"></span>
+						</div>
+					</div>
+				</div>
+			</div>
+		</nav>
+		<div style="height: 1px; background-color: #e2e3e5;"></div>
+	</header>
+
+	<div class="container-fluid p-0 col-12" id="hero-image-container">
+		<div class="image-wrapper">
+		  <img src="media/images/achievement-plans/hero-image.jpeg" class="col-12 d-block d-lg-none" alt="">
+		  <img src="media/images/achievement-plans/hero-image-cropped.jpeg" class="col-12 d-none d-lg-block" alt="">
+		  <div class="hero-title text-center d-flex align-items-end">
+			<h1 class="roboto-slab text-nowrap">With <i><img src="media/images/achievement-plans/sp-logo.png" style="width: 4rem; margin-bottom: 1rem;" alt=""></i> 
+				It's <i><img src="media/images/achievement-plans/sp-s.png" style="width: 2rem; margin-bottom: 1rem;" alt=""></i>o&nbsp;
+				<i><img src="media/images/achievement-plans/sp-p.png" style="width: 1.8rem; margin-bottom: 1rem;" alt=""></i>ossible.</h1>
+		  </div>
+		</div>
+	  </div>
+
+	<div class="container-fluid col-12 col-md-8 col-lg-6">
+	<iframe src="https://www.youtube.com/embed/w_lFlr2aR0w" class="col-12" id="so-possible-video"></iframe>
+	</div>
+
+	  <div class="container-fluid col-10 col-md-8 col-lg-5">
+		<div class="row">
+			<div class="col-4 d-flex justify-content-center align-items-center">
+				<div>
+				<img src="media/images/achievement-plans/5g-aiot-centre-icon.png" class="col-12" alt="" id="center-icon">
+				<h6 class="text-center roboto-slab my-md-3">5G & AIoT<span class="d-none d-md-block">Center</span></h6>
+				<img src="media/images/achievement-plans/amc-centre-icon.png" class="col-12" alt="">
+				<h6 class="text-center roboto-slab mt-md-3"><span class="d-none d-md-block">Advanced Manufacuturing<br>Center</span> (AMC)</h6>
+				</div>
+			</div>
+			<div class="col-4">
+				<img src="media/images/achievement-plans/amtc-centre-icon.png" class="col-12" alt="">
+				<h6 class="text-center roboto-slab mt-md-1"><span class="d-none d-md-block">Advanced Materials<br>Technology Center</span> (AMTC)</h6>
+				<div id="center-placeholder"></div>
+				<img src="media/images/achievement-plans/cctc-centre-icon.png" class="col-12" alt="">
+				<h6 class="text-center roboto-slab mt-md-3"><span class="d-none d-md-block">Consumer Chemicals<br>Technology Centre</span> (CCTC)</h6>
+			</div>
+			<div class="col-4 d-flex justify-content-center align-items-center">
+				<div>
+				<img src="media/images/achievement-plans/firc-centre-icon.png" class="col-12" alt="">
+				<h6 class="text-center roboto-slab my-md-3"><span class="d-none d-md-block">Food Innovation &<br>Resource Center</span> (FIRC)</h6>
+				<img src="media/images/achievement-plans/cems-centre-icon.png" class="col-12" alt="">
+				<h6 class="text-center roboto-slab mt-md-3"><span class="d-none d-md-block">Center of Excellence<br>In Maritime Safety</span> (CEMS)</h6>
+				</div>
+			</div>
+		</div>
+	  </div>
+
+	<div class="container-fluid p-0">
+		<div class="row no-gutters">
+			<div class="col-12 video-container">
+				<video autoplay loop muted class="d-none d-md-block">
+					<source src="media/videos/achievement-plans/sustainability-banner-video.mp4" type="video/mp4">
+					<!-- Include other video sources here for compatibility -->
+					Your browser does not support the video tag.
+				</video>
+				<video autoplay loop muted class="d-md-none">
+					<source src="media/videos/achievement-plans/sustainability-banner-video-cropped.mp4" type="video/mp4">
+					<!-- Include other video sources here for compatibility -->
+					Your browser does not support the video tag.
+				</video>
+				<div class="overlay-text">
+					<h5 style="color: #196512;">Sustainability matters</h5>
+					<h4>Progress in Mind<br>
+						Sustainability in Heart</h4>
+				</div>
+			</div>
+		</div>
+	</div>
+
+<!-- future-ready section -->
+	<article class="future-ready">
+		<h6 class=" container-fluid col-10 col-md-8 text-start my-3 text-center" id="future-ready-text">Becoming “future-ready” is at the core of SP's DNA, expressed in our mission of being life-ready, work-ready and world-ready. Here's an extract from our commemorative book outlining three areas where SP is leading the way forward:</h6>
+		<!-- displays carousal of three cards in view-widths smaller than large -->
+		<div class="container-fluid col-12 col-sm-12 col-md-10 d-lg-none">
+			<div class="row">
+				<div class="col-2 mx-auto my-auto">
+					<button class="carousel-button carousel-control-prev mx-auto" id="future-ready-carousel-control-prev" type="button"
+						data-bs-target="#future-ready-carousel" data-bs-slide="prev">
+						<span
+							class="bg-dark mx-auto d-flex justify-content-center align-items-center"
+							id="future-ready-carousel-control-prev-icon"
+							aria-hidden="true"><i class="bi bi-arrow-left"></i></span>
+						<span class="visually-hidden mx-auto">Previous</span>
+					</button>
+				</div>
+				<div class="col-8">
+					<div id="future-ready-carousel" class="carousel slide py-5" data-bs-touch="true" data-bs-ride="carousel">
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="card">
+									<img src="media/images/index/personal-work-life.jpg" class="card-img-top" alt="Personal/Work Life">
+									<div class="card-body">
+										<h5 class="card-title roboto-slab text-center">Personal/Work Life</h5>
+										<p class="card-text">Personal and work life are undergoing fundamental change.
+											Being
+											globally connected is a key aspect of SP's “future-ready” DNA. This includes
+											fostering curiosity about the rest of the world, in all its diversity. Such
+											an
+											international outlook also builds empathy with people of other cultures,
+											which
+											is a vital ingredient in most fields of work, along with the capacity to
+											understand the needs of users and consumers, markets and audiences.</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card">
+									<img src="media/images/index/industry-disruptions.jpg" class="card-img-top" alt="Industry disruptions">
+									<div class="card-body">
+										<h5 class="card-title roboto-slab text-center">Industry Disruptions</h5>
+										<p class="card-text">The whole universe of industry has become much more
+											disruptive,
+											with game-changing developments in areas such as artificial intelligence
+											(AI),
+											machine learning, the Internet of Things (IoT), and robotics. To be
+											future-ready, SP will need to embrace, and adapt to, change in industry -
+											whether from technological advances or other shifts in the workplace.
+											Anticipating the future is the only safeguard against the worst of
+											disruption
+											and displacement.</p>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="card">
+									<img src="media/images/index/global-shifts.jpg" class="card-img-top" alt="Global shifts">
+									<div class="card-body">
+										<h5 class="card-title roboto-slab text-center">Global Shifts</h5>
+										<p class="card-text">Of all the global issues facing the world, climate change
+											tops
+											the list, which is huge too, at Singapore Polytechnic, as efforts to help
+											students become more “future-ready” focus on addressing sustainability,
+											always
+											from a holistic, big-picture perspective. This commitment is most concrete
+											in
+											the Polytechnic's Sustainable Innovation Project (SIP), which gives a
+											learning
+											experience that culminates in a capstone project that students work on in
+											their
+											Year2.</p>
+									</div>
+								</div>
+							</div>
+						</div>
+
+					</div>
+				</div>
+				<div class="col-2 my-auto mx-auto">
+					<button class="carousel-button carousel-control-next mx-auto" id="future-ready-carousel-control-next" type="button"
+						data-bs-target="#future-ready-carousel" data-bs-slide="next">
+						<span
+							class="bg-dark mx-auto d-flex justify-content-center align-items-center"
+							id="future-ready-carousel-control-next-icon"
+							aria-hidden="true"><i class="bi bi-arrow-right"></i></span>
+						<span class="visually-hidden mx-auto">Next</span>
+					</button>
+				</div>
+			</div>
+
+
+
+		</div>
+
+		<!-- displays cards with columns grid in view-widths of large and above -->
+		<div class="container mx-auto d-none d-lg-block">
+			<div class="row gx-5 gy-5">
+				<div class="col-lg-6 col-xl-4">
+					<div class="card">
+						<img src="media/images/index/personal-work-life.jpg" class="card-img-top" alt="Personal Work/ Life">
+						<div class="card-body">
+							<h5 class="card-title roboto-slab text-center">Personal Work/Life</h5>
+							<p class="card-text">Personal and work life are undergoing fundamental change. Being
+								globally
+								connected is a key aspect of SP's “future-ready” DNA. This includes fostering curiosity
+								about the rest of the world, in all its diversity. Such an international outlook also
+								builds
+								empathy with people of other cultures, which is a vital ingredient in most fields of
+								work,
+								along with the capacity to understand the needs of users and consumers, markets and
+								audiences.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-6 col-xl-4">
+					<div class="card">
+						<img src="media/images/index/industry-disruptions.jpg" class="card-img-top" alt="Industry disruptions">
+						<div class="card-body">
+							<h5 class="card-title roboto-slab text-center">Industry Disruptions</h5>
+							<p class="card-text">The whole universe of industry has become much more disruptive, with
+								game-changing developments in areas such as artificial intelligence (AI), machine
+								learning,
+								the Internet of Things (IoT), and robotics. To be future-ready, SP will need to embrace,
+								and
+								adapt to, change in industry - whether from technological advances or other shifts in
+								the
+								workplace. Anticipating the future is the only safeguard against the worst of disruption
+								and
+								displacement.</p>
+						</div>
+					</div>
+				</div>
+				<div class="col-lg-12 col-xl-4">
+					<div class="row d-flex justify-content-center">
+						<div class="col-6 col-xl-12">
+							<div class="card">
+								<img src="media/images/index/global-shifts.jpg" class="card-img-top" alt="Global shifts">
+								<div class="card-body">
+									<h5 class="card-title roboto-slab text-center">Global Shifts</h5>
+									<p class="card-text">Of all the global issues facing the world, climate change tops
+										the
+										list, which is huge too, at Singapore Polytechnic, as efforts to help students
+										become more “future-ready” focus on addressing sustainability, always from a
+										holistic, big-picture perspective. This commitment is most concrete in the
+										Polytechnic's Sustainable Innovation Project (SIP), which gives a learning
+										experience that culminates in a capstone project that students work on in their
+										Year2.</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+		</div>
+	</article>
+
+
+	<footer class="container-fluid text-white d-flex justify-content-center">
+		<!-- container with different widths for different view-widths-->
+		<div class="container col col-lg-10 col-xl-8">
+			<!-- image and contact-info for under medium view-widths -->
+			<div class="row">
+				<div class="col-8 col-lg-4 text-center text-lg-start offset-2 offset-lg-0">
+					<img src="media/images/general/sp-footer-thumbnail.png" alt="SP" class="mb-4 mt-3">
+				</div>
+				<p class="d-lg-none text-center text-lg-start mb-3">Singapore Polytechnic</p>
+				<p class="d-lg-none text-center text-lg-start my-1 contact-info"><i
+						class="bi bi-geo-alt-fill"></i>&nbsp;500 Dover Road Singapore 139651</p>
+				<p class="d-lg-none text-center text-lg-start my-1 contact-info"><i
+						class="bi bi-telephone-fill"></i>&nbsp;<a href="tel:+6567751133">+65 67751133</a></p>
+				<p class="d-lg-none text-center text-lg-start mt-1 mb-3 contact-info"><i
+						class="bi bi-envelope-at-fill"></i>&nbsp;<a
+						href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>
+				<p class="d-lg-none text-center mb-0 mt-2">Follow SP</p>
+				<!-- social media links container-->
+				<div
+					class="col-12 col-lg-8 text-center mt-2 offset-lg-0 d-flex justify-content-center justify-content-lg-end">
+					<div class="row col-6 col-lg-10 text-center d-flex justify-content-center">
+						<div class="row d-flex justify-content-center">
+							<p class="fs-6 col-4 d-none d-lg-block text-end my-auto">Follow SP:</p>
+							<!-- social media links -->
+							<div class="row col-12 col-lg-8 row-cols-6 gx-lg-3 text-center d-flex align-items-center">
+								<a class="footer-icon" href="https://www.facebook.com/singaporepolytechnic"><i
+										class="bi bi-facebook text-center"></i></a>
+								<a class="footer-icon" href="https://instagram.com/singaporepoly"><i
+										class="bi bi-instagram text-center"></i></a>
+								<a class="footer-icon" href="https://www.youtube.com/singaporepolytechnic"><i
+										class="bi bi-youtube text-center"></i></a>
+								<a class="footer-icon"
+									href="https://www.linkedin.com/company/singapore-polytechnic/jobs"><i
+										class="bi bi-linkedin text-center"></i></a>
+								<a class="footer-icon" href="https://t.me/SingaporePoly"><i
+										class="bi bi-telegram text-center"></i></a>
+								<a class="footer-icon" href="https://www.tiktok.com/@singaporepoly?lang=en"><i
+										class="bi bi-tiktok text-center"></i></a>
+							</div>
+						</div>
+
+					</div>
+
+				</div>
+				<!-- row containing contacts and links -->
+				<div class="row mt-lg-0 mt-3 my-2">
+					<!-- contact info for large and above view-widths -->
+					<div class="text-start d-none d-lg-block col-lg-4">
+						<!-- contact info -->
+						<p class="mb-3">Singapore Polytechnic</p>
+						<p class="my-1 contact-info"><i class="bi bi-geo-alt-fill"></i>&ensp;<a
+								href="https://maps.app.goo.gl/Qk2UhztRHUxUuGkv5">500 Dover Road Singapore 139651</a></p>
+						<p class="my-1 contact-info"><i class="bi bi-telephone-fill"></i>&ensp;<a
+								href="tel:+6567751133">+65 67751133</a></p>
+						<p class="mt-1 mb-3 contact-info"><i class="bi bi-envelope-at-fill"></i>&ensp;<a
+								href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>
+					</div>
+					<!-- other links -->
+					<div class="text-center text-lg-end col-lg-8">
+						<a href="https://tech.gov.sg/report_vulnerability" class="footer-link">Report
+							Vulnerability</a>&nbsp;&nbsp;/&nbsp;
+						<a href="https://www.sp.edu.sg/sp/privacy-statement" class="footer-link">Privacy
+							Statement</a>&nbsp;&nbsp;/&nbsp;
+						<a href="https://www.sp.edu.sg/sp/terms-of-use" class="footer-link">Terms of
+							Use</a>&nbsp;&nbsp;/&nbsp;
+						<a href="https://www.sp.edu.sg/sp/sitemap" class="footer-link">Sitemap</a>
+					</div>
+				</div>
+			</div>
+			<!-- separator line -->
+			<div style="border-top: 3px solid white;"></div>
+			<!-- info under separator line -->
+			<p class="text-center text-lg-start mb-0 mt-3" style="font-size: 12px;">Last Updated: 14 June 2024</p>
+			<p class="text-center text-lg-start mt-0 mb-3" style="font-size: 12px;">Best viewed using latest versions of
+				Microsoft Edge, Mozilla Firefox, Safari and Google Chrome.</p>
+		</div>
+	</footer>
+
+</body>
+
+</html>
+
+
+<!-- https://images.unsplash.com/photo-1483444308400-fb9510501d23?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww -->
