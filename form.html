@@ -19,9 +19,9 @@
 	<link rel="stylesheet" href="css/form.css">
 	<link rel="stylesheet" href="css/general.css">
 
-    <!-- js links to form.js and general.js-->
-    <script src="js/form.js" defer></script>
-    <script src="js/general.js" defer></script>
+	<!-- js links to form.js and general.js-->
+	<script src="js/form.js" defer></script>
+	<script src="js/general.js" defer></script>
 
 	<!-- catamaran font -->
 	<link rel="preconnect" href="https://fonts.googleapis.com">
@@ -41,8 +41,6 @@
 </head>
 
 <body>
-	<div class="col-12" id="notification">
-	</div>
 
 	<!-- header with header logo and navbar -->
 	<header>
@@ -62,8 +60,8 @@
 			<div class="container-md">
 				<!-- navbar brand image with link to SP official -->
 				<a class="navbar-brand" href="https://www.sp.edu.sg">
-					<img src="media/images/general/sp-navbar-logo.png" class="py-1 py-sm-1 py-md-0 py-lg-0 py-xl-0" alt="SP"
-						width="50">
+					<img src="media/images/general/sp-navbar-logo.png" class="py-1 py-sm-1 py-md-0 py-lg-0 py-xl-0"
+						alt="SP" width="50">
 				</a>
 				<!-- navbar toggle button in small view-widths -->
 				<button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
@@ -89,7 +87,8 @@
 						</li>
 						<!-- feedback form button -->
 						<li class="nav-item active-navbutton">
-							<a class="nav-link active bg-dark text-white px-3 py-3" aria-current="page" href="form.html">
+							<a class="nav-link active bg-dark text-white px-3 py-3" aria-current="page"
+								href="form.html">
 								<i class="bi bi-envelope-paper-heart"></i>
 								&nbsp;Send Your Wishes
 							</a>
@@ -103,37 +102,49 @@
 						<div class="col-7 offset-5"><i class="bi bi-calendar-week"></i>&ensp;<span
 								id="current-date-wday"></span></div>
 						<!-- placeholder for current time -->
-						<div class="col-7 offset-5"><i class="bi bi-clock"></i>&ensp;<span id="current-time"></span></div>
+						<div class="col-7 offset-5"><i class="bi bi-clock"></i>&ensp;<span id="current-time"></span>
+						</div>
 					</div>
 				</div>
 			</div>
 		</nav>
+		<!-- placeholder line -->
 		<div style="height: 1px; background-color: #e2e3e5;"></div>
 	</header>
 
-	<img src="media/images/form/sp70-form-hero-image.jpg" class="img-fluid" alt="Wish SP70">
+
+	<!-- hero image container -->
+	<div class="container-fluid col-12 p-0 mb-5" id="hero-image-container">
+		<!-- cropped image appears in view-widths under lg -->
+		<img src="media/images/form/sp-form-hero-image-cropped.png" class="col-12 d-lg-none" alt="Wish SP70">
+		<!-- not cropped image appears in view-widths on lg and above -->
+		<img src="media/images/form/sp-form-hero-image.png" class="col-12 d-none d-lg-block" alt="Wish SP70">
+	</div>
 
 	<!-- form to show before submitting -->
 	<div class="container-fluid col-md-8 col-lg-6 col-xl-5 my-5 py-5" id="before-submit">
 		<!-- form with submit button to display form submitted page -->
-        <form class="px-5" onsubmit="displayFormSubmitted(event)">
+		<form class="px-5" onsubmit="displayFormSubmitted(event)">
 			<!-- full name label, input field and error message space -->
-            <div class="mb-3">
-                <label for="input-name" class="form-label">Full Name&nbsp;<span style="color: red;"><b>*</b></span></label>
-                <input type="text" class="form-control" placeholder="Enter your full name" id="input-name">
+			<div class="mb-3">
+				<label for="input-name" class="form-label">Full Name&nbsp;<span
+						style="color: red;"><b>*</b></span></label>
+				<input type="text" class="form-control" placeholder="Enter your full name" id="input-name">
 				<!-- shows input required when field is not filled -->
 				<p class="error-message" id="error-message1"></p>
-            </div>
-			<!-- email label, input field and error message space -->			
-            <div class="mb-3">
-                <label for="input-email" class="form-label">Email address&nbsp;<span style="color: red;"><b>*</b></span></label>
-                <input type="email" class="form-control" placeholder="name@example.com" id="input-email">
+			</div>
+			<!-- email label, input field and error message space -->
+			<div class="mb-3">
+				<label for="input-email" class="form-label">Email address&nbsp;<span
+						style="color: red;"><b>*</b></span></label>
+				<input type="email" class="form-control" placeholder="name@example.com" id="input-email">
 				<!-- shows input required when field is not filled -->
 				<p class="error-message" id="error-message2"></p>
-            </div>
+			</div>
+			<!-- select options (optional, no error message for not selecting)-->
 			<label for="input-select" class="form-label">Your favourite school</label>
-            <select class="form-select mb-3" id="input-select">
-                <option selected disabled>Select a school</option>
+			<select class="form-select mb-3" id="input-select">
+				<option selected disabled>Select a school</option>
 				<option>School of Architecture & the Built Environment</option>
 				<option>School of Business</option>
 				<option>School of Chemical & Life Sciences</option>
@@ -144,66 +155,129 @@
 				<option>School of Mechanical and Aeronautical Engineering</option>
 				<option>School of Mathematics & Science</option>
 				<option>Singapore Maritime Academy</option>
-            </select>
+			</select>
+			<!-- student status validation label, yes or no and error message space -->
 			<div class="mb-3">
-				<label for="input-student-yes" class="form-label">Are you a student of SP?&nbsp;<span style="color: red;"><b>*</b></span></label>
+				<label for="input-student-yes" class="form-label">Are you a student of SP?&nbsp;<span
+						style="color: red;"><b>*</b></span></label>
+				<!-- form check yes -->
 				<div class="form-check">
-				<input class="form-check-input" type="radio" name="student-radio" id="input-student-yes" onclick="showStudentForm('yes');">
-				<label class="form-check-label" for="input-student-yes">
-				  Yes
-				</label>
-			  </div>
-			  <div class="form-check">
-				<input class="form-check-input" type="radio" name="student-radio" id="input-student-no" onclick="showStudentForm('no');">
-				<label class="form-check-label" for="input-student-no">
-				  No
-				</label>
-			  </div>
+					<!-- if click yes, activate function that displays student ID and iChat email input fields -->
+					<input class="form-check-input" type="radio" name="student-radio" id="input-student-yes"
+						onclick="showStudentForm('yes');">
+					<label class="form-check-label" for="input-student-yes">
+						Yes
+					</label>
+				</div>
+				<!-- form check no -->
+				<div class="form-check">
+					<!-- if click yes, activate function that hides student ID and iChat email input fields -->
+					<input class="form-check-input" type="radio" name="student-radio" id="input-student-no"
+						onclick="showStudentForm('no');">
+					<label class="form-check-label" for="input-student-no">
+						No
+					</label>
+				</div>
 				<!-- shows input required when field is not filled -->
-			  <p class="error-message" id="error-message-check"></p>
-
-			  </div>
-
-			<div class="my-3" id="extra-field" style="display: none;">
-			<div class="mb-3">
-                <label for="input-student-id" class="form-label">Student ID&nbsp;<span style="color: red;"><b>*</b></span></label>
-                <input type="text" class="form-control" placeholder="Enter your student ID" id="input-student-id">
-				<!-- shows input required when field is not filled -->
-				<p class="error-message" id="error-message-check1"></p>
-            </div>
-            <div class="mb-3">
-                <label for="input-ichat-email" class="form-label">SP iChat email&nbsp;<span style="color: red;"><b>*</b></span></label>
-                <input type="email" class="form-control" placeholder="name@ichat.sp.edu.sg" id="input-ichat-email">
-				<!-- shows input required when field is not filled -->
-				<p class="error-message" id="error-message-check2"></p>
-            </div>
+				<p class="error-message" id="error-message-check"></p>
 
 			</div>
+
+			<!-- student credentials section not displayed initially, display status can be toggled with previous form-checks -->
+			<div class="my-3" id="extra-field" style="display: none;">
+				<div class="mb-3">
+					<label for="input-student-id" class="form-label">Student ID&nbsp;<span
+							style="color: red;"><b>*</b></span></label>
+					<input type="text" class="form-control" placeholder="Enter your student ID" id="input-student-id">
+					<!-- shows input required when field is not filled -->
+					<p class="error-message" id="error-message-check1"></p>
+				</div>
+				<div class="mb-3">
+					<label for="input-ichat-email" class="form-label">SP iChat email&nbsp;<span
+							style="color: red;"><b>*</b></span></label>
+					<input type="email" class="form-control" placeholder="name@ichat.sp.edu.sg" id="input-ichat-email">
+					<!-- shows input required when field is not filled -->
+					<p class="error-message" id="error-message-check2"></p>
+				</div>
+			</div>
+			<!-- floating textarea, and placeholder label for wishes -->
 			<div class="mb-3 form-floating">
-				<textarea class="form-control" placeholder="Leave a comment here" id="input-wish-text" style="height: 100px;"></textarea>
-				<label for="input-wish-text">Wish regarding SP's 70th Anniversary! 🤗✨&nbsp;<span style="color: red;"><b>*</b></span></label>
+				<textarea class="form-control" placeholder="Leave a comment here" id="input-wish-text"
+					style="height: 100px;"></textarea>
+				<label for="input-wish-text">Wish regarding SP's 70th Anniversary! 🤗✨&nbsp;<span
+						style="color: red;"><b>*</b></span></label>
 				<!-- shows input required when field is not filled -->
 				<p class="error-message" id="error-message3"></p>
-			  </div>
-			  <div class="mb-3 form-check">
-                <input type="checkbox" class="form-check-input" id="emailCheck">
-                <label class="form-check-label" for="emailCheck">I'd like to receive an email of this response.</label>
-            </div>
+			</div>
+			<!-- email want or not check -->
+			<div class="mb-3 form-check">
+				<input type="checkbox" class="form-check-input" id="emailCheck">
+				<label class="form-check-label" for="emailCheck">I'd like to receive an email of this response.</label>
+			</div>
+			<!-- refresh button that clear all values in the form -->
 			<div class="text-end">
-			<button type="button" class="btn btn-secondary me-2 mb-3" onclick="refreshInputs(event)"><i class="bi bi-arrow-clockwise"></i>&ensp;Refresh</button>
+				<button type="button" class="btn btn-secondary me-2 mb-3" onclick="refreshInputs(event)"><i
+						class="bi bi-arrow-clockwise"></i>&ensp;Refresh</button>
 			</div>
+			<!-- submit button for the form -->
 			<div class="text-center">
-            <button type="submit" class="btn btn-primary col-4 mx-auto" id="submit-button">
-				<span>Submit</span>
-			</button>
-			
+				<button type="submit" class="btn btn-primary col-4 mx-auto" id="submit-button">
+					<span>Submit</span>
+				</button>
 			</div>
-        </form>
-    </div>
+		</form>
+	</div>
 
-	<!-- div container into which second page will add after submitting the form -->
+	<!-- hidden button that is auto clicked 2 seconds after clicking submit form -->
+	<button type="button" class="btn btn-primary d-none" id="form-toast-trigger">Show live toast</button>
+
+	<!-- Live toast notification after clicking toast button -->
+	<div class="toast-container position-fixed top-0 start-0 p-3">
+		<div id="form-live-toast" class="toast" role="alert" aria-live="assertive" aria-atomic="true">
+			<div class="toast-header bg-info-subtle">
+				<strong class="me-auto fw-bold roboto-slab">Notification</strong>
+				<small>now</small>
+				<button type="button" class="btn-close" data-bs-dismiss="toast" aria-label="Close"></button>
+			</div>
+			<div class="toast-body">
+				<p class="fw-bold roboto-slab">Form submitted successfully! 🎉</p>
+			</div>
+		</div>
+	</div>
+
+	<!-- Container for the form submission -->
 	<div class="container col-md-8 col-lg-6 col-xl-5 my-5 py-5" id="after-submit"></div>
 
+	<!-- Container for displaying wishes -->
+	<div class="container-fluid col-12 d-none" id="wishes-container">
+		<div class="container col-10 col-md-10">
+			<h1 class="text-center roboto-slab p-4">Your Wishes</h1>
+			<div id="wishes-placeholder" class="row g-3 d-flex justify-content-center align-items-center">
+			</div>
+			<div class="my-3 p-3 text-center" id="modal-button">
+				<button type="button" class="btn btn-success btn-lg" data-bs-toggle="modal" data-bs-target="#wishes-modal" id="modal-button">
+					<i class="bi bi-list-task"></i>&ensp;See all wishes
+				</button>
+			</div>
+		</div>
+	</div>
+
+  <!-- Wishes Modal -->
+  <div class="modal fade" id="wishes-modal" tabindex="-1" aria-labelledby="wishes-modal-label" aria-hidden="true">
+	<div class="modal-dialog">
+	  <div class="modal-content">
+		<div class="modal-header bg-primary-subtle">
+		  <h1 class="modal-title fs-5" id="wishes-modal-label">All Wishes</h1>
+		  <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+		</div>
+		<div class="modal-body" id="wishes-modal-body">
+		</div>
+		<div class="modal-footer">
+		  <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+		</div>
+	  </div>
+	</div>
+  </div>
 
 	<footer class="container-fluid text-white d-flex justify-content-center">
 		<!-- container with different widths for different view-widths-->
@@ -214,9 +288,13 @@
 					<img src="media/images/general/sp-footer-thumbnail.png" alt="SP" class="mb-4 mt-3">
 				</div>
 				<p class="d-lg-none text-center text-lg-start mb-3">Singapore Polytechnic</p>
-				<p class="d-lg-none text-center text-lg-start my-1 contact-info"><i class="bi bi-geo-alt-fill"></i>&nbsp;500 Dover Road Singapore 139651</p>
-				<p class="d-lg-none text-center text-lg-start my-1 contact-info"><i class="bi bi-telephone-fill"></i>&nbsp;<a href="tel:+6567751133">+65 67751133</a></p>
-				<p class="d-lg-none text-center text-lg-start mt-1 mb-3 contact-info"><i class="bi bi-envelope-at-fill"></i>&nbsp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>
+				<p class="d-lg-none text-center text-lg-start my-1 contact-info"><i
+						class="bi bi-geo-alt-fill"></i>&nbsp;500 Dover Road Singapore 139651</p>
+				<p class="d-lg-none text-center text-lg-start my-1 contact-info"><i
+						class="bi bi-telephone-fill"></i>&nbsp;<a href="tel:+6567751133">+65 67751133</a></p>
+				<p class="d-lg-none text-center text-lg-start mt-1 mb-3 contact-info"><i
+						class="bi bi-envelope-at-fill"></i>&nbsp;<a
+						href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>
 				<p class="d-lg-none text-center mb-0 mt-2">Follow SP</p>
 				<!-- social media links container-->
 				<div
@@ -251,9 +329,12 @@
 					<div class="text-start d-none d-lg-block col-lg-4">
 						<!-- contact info -->
 						<p class="mb-3">Singapore Polytechnic</p>
-						<p class="my-1 contact-info"><i class="bi bi-geo-alt-fill"></i>&ensp;<a href="https://maps.app.goo.gl/Qk2UhztRHUxUuGkv5">500 Dover Road Singapore 139651</a></p>
-						<p class="my-1 contact-info"><i class="bi bi-telephone-fill"></i>&ensp;<a href="tel:+6567751133">+65 67751133</a></p>
-						<p class="mt-1 mb-3 contact-info"><i class="bi bi-envelope-at-fill"></i>&ensp;<a href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>		
+						<p class="my-1 contact-info"><i class="bi bi-geo-alt-fill"></i>&ensp;<a
+								href="https://maps.app.goo.gl/Qk2UhztRHUxUuGkv5">500 Dover Road Singapore 139651</a></p>
+						<p class="my-1 contact-info"><i class="bi bi-telephone-fill"></i>&ensp;<a
+								href="tel:+6567751133">+65 67751133</a></p>
+						<p class="mt-1 mb-3 contact-info"><i class="bi bi-envelope-at-fill"></i>&ensp;<a
+								href="mailto:contactus@sp.edu.sg">contactus@sp.edu.sg</a></p>
 					</div>
 					<!-- other links -->
 					<div class="text-center text-lg-end col-lg-8">
@@ -271,9 +352,18 @@
 			<div style="border-top: 3px solid white;"></div>
 			<!-- info under separator line -->
 			<p class="text-center text-lg-start mb-0 mt-3" style="font-size: 12px;">Last Updated: 14 June 2024</p>
-			<p class="text-center text-lg-start mt-0 mb-3" style="font-size: 12px;">Best viewed using latest versions of Microsoft Edge, Mozilla Firefox, Safari and Google Chrome.</p>
+			<p class="text-center text-lg-start mt-0 mb-3" style="font-size: 12px;">Best viewed using latest versions of
+				Microsoft Edge, Mozilla Firefox, Safari and Google Chrome.</p>
 		</div>
 	</footer>
 
 </body>
+
 </html>
+
+<!-- 
+Image sources
+
+1. Hero image banner: from "Canva"(own work) https://www.canva.com/design/DAGMtkQLY8s/mT9RTedKR6BfMMNF2isdPQ/view?utm_content=DAGMtkQLY8s&utm_campaign=designshare&utm_medium=link&utm_source=editor 
+
+-->
