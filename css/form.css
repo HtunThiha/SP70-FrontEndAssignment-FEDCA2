@@ -1,0 +1,43 @@
+/* FORM TITLE */
+/* form-title decoration */
+#form-title {
+    background-image: linear-gradient(135deg, #74ebd5, #9face6);
+    border-radius: 20px;
+    color: #f6323e;
+    text-shadow: 2px 2px whitesmoke;
+}
+
+
+/* FORM CONTAINERS */
+/* container backgrounds and styles of form and submit complete page */
+#before-submit, #after-submit {
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 10px;
+    border-top-style: solid;
+    border-color: red;
+    border-width: 10px;
+    background-image: linear-gradient(160deg, #bcdddc 0%, #ffd4df 100%);}
+
+/* initially hide the submit complete page */
+#after-submit {
+    display: none;
+}
+
+
+/* ERROR MESSAGE */
+/* error messages style when required inputs are not filled */
+.error-message {
+    font-size: smaller;
+    color: red;
+}
+
+/* WISHES CONTAINER */
+/* background gradient for the section */
+#wishes-container {
+    background-image: linear-gradient(135deg, rgb(224, 240, 240), rgb(216, 238, 246));
+}
+
+/* each wish card's border radius */
+.wish-card {
+    border-radius: 7px;
+}

@@ -1,0 +1,123 @@
+/* video container */
+.video-container {
+    position: relative; /* relative positioning for child elements */
+    width: 100%; /* full width of parent */
+    overflow: hidden; /* clip overflow */
+}
+
+/* video styling */
+.video-container video {
+    width: 100%; /* full width */
+    height: auto; /* maintain aspect ratio */
+    display: block; /* block-level element */
+}
+
+/* overlay text positioning */
+.overlay-text {
+    position: absolute; /* positioned relative to container */
+    top: 40%; /* 40% down from top */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%); /* center precisely */
+    color: white; /* white text */
+    text-align: center; /* center text */
+    font-weight: bold; /* bold text */
+    font-size: 1.5rem; /* larger font size */
+    text-shadow: 2px 2px 4px black; /* text shadow */
+}
+
+/* hero image container */
+#hero-image-container {
+    position: relative; /* relative positioning for child elements */
+}
+
+/* image wrapper for hero image */
+.image-wrapper {
+    position: relative; /* relative positioning for child elements */
+}
+
+/* styling for images inside wrapper */
+.image-wrapper img {
+    width: 100%; /* full width of container */
+    height: auto; /* maintain aspect ratio */
+}
+
+/* hero title positioning */
+.hero-title {
+    position: absolute; /* absolute positioning */
+    top: 35%; /* 35% down from top */
+    left: 50%; /* center horizontally */
+    transform: translate(-50%, -50%); /* center precisely */
+}
+
+/* club card hover effect */
+.club-card:hover {
+    transform: translate(0px, -10px); /* move up on hover */
+    text-decoration: underline; /* underline text */
+    color: #f6323e; /* change text color */
+    transition: 0.5s; /* smooth transition */
+}
+
+/* future-ready carousel control styling */
+#future-ready-carousel-control-prev,
+#future-ready-carousel-control-next {
+    width: 50px; /* width of control buttons */
+    position: relative; /* relative positioning */
+}
+
+/* carousel control icons styling */
+#future-ready-carousel-control-prev-icon,
+#future-ready-carousel-control-next-icon {
+    background-color: rgba(0, 0, 0, 0.5); /* semi-transparent background */
+    width: 50px; /* width of icons */
+    height: 50px; /* height of icons */
+    border-radius: 50%; /* circular icons */
+    padding: 0%; /* no extra padding */
+}
+
+/* animation for tie-center class and video checkout text */
+.tie-center:hover, #sp-video-checkout-text {
+    animation: up-and-down-7px 1s infinite; /* bouncing animation */
+    transition: 1.5s; /* smooth transition */
+}
+
+/* specific animation for video checkout text */
+#sp-video-checkout-text {
+    animation: up-and-down-5px 1s infinite; /* different bouncing animation */
+    transition: 1.5s; /* smooth transition */
+}
+
+/* keyframes for up-and-down-7px animation */
+@keyframes up-and-down-7px {
+    0% {
+        transform: translate(0px, 0px); /* start position */
+    }
+    50% {
+        transform: translate(0px, -7px); /* bounce up */
+    }
+    100% {
+        transform: translate(0px, 7px); /* bounce down */
+    }
+}
+
+/* keyframes for up-and-down-5px animation */
+@keyframes up-and-down-5px {
+    0% {
+        transform: translate(0px, 0px); /* start position */
+    }
+    50% {
+        transform: translate(0px, -5px); /* bounce up */
+    }
+    100% {
+        transform: translate(0px, 5px); /* bounce down */
+    }
+}
+
+/* background image for sustainability section */
+#sustainability-background {
+    background-image: url(../media/images/achievement-plans/sustainability-background.jpg); /* background image */
+}
+
+/* background gradient for sustainability title */
+#sustainability-title {
+    background-image: linear-gradient(180deg, #f6323e, #a60c17); /* gradient background */
+}

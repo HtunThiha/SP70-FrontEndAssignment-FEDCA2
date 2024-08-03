@@ -1,0 +1,112 @@
+/* HERO CAROUSEL BACKGROUND */
+
+/* background image for the hero carousel section */
+.hero-carousel-background {
+    background-image: url(../media/images/index/hero-carousel-background.png); /* background image */
+    background-size: cover; /* makes the image cover the entire page */
+    background-position: center; /* centers the image */
+    background-repeat: no-repeat; /* prevents the image from repeating */
+    z-index: 1; /* ensures it is positioned behind other elements */
+}
+
+/* CAROUSEL GRADIENT */
+
+/* gradient overlay for the hero carousel */
+.carousel-gradient {
+    position: absolute; /* absolute positioning to overlay on top of the background */
+    bottom: 0; /* aligns to the bottom */
+    left: 0; /* aligns to the left */
+    width: 100%; /* full width */
+    height: 60%; /* covers 60% of the height */
+    background: linear-gradient(to top, rgba(0, 0, 0, 0.95), rgba(0, 0, 0, 0)); /* gradient from black to transparent */
+}
+
+/* CAROUSEL TITLE TEXT SHADOW */
+
+/* text shadow for hero and intro carousel titles */
+.hero-carousel-title, .intro-carousel-title {
+    text-shadow: 2px 2px black; /* adds a black shadow to the text */
+}
+
+/* COUNTDOWN TIMER BORDER ANIMATION */
+
+/* styling and animation for countdown container */
+#countdown-container {
+    border-style: solid; /* solid border */
+    border-width: 7px; /* border width */
+    border-color: aqua; /* initial border color */
+    animation: timerBorderAnimation 1s infinite ease-in-out; /* applies animation */
+}
+
+/* border color animation for countdown timer */
+@keyframes timerBorderAnimation {
+    25% {
+        border-color: rgb(5, 43, 43); /* change border color at 25% */
+    }
+    50% {
+        border-color: rgb(122, 86, 12); /* change border color at 50% */
+    }
+    75% {
+        border-color: blueviolet; /* change border color at 75% */
+    }
+    100% {
+        border-color: rgb(64, 92, 136); /* change border color at 100% */
+    }
+}
+
+/* STATISTICS BOX STYLING */
+
+/* styling for statistics section with shadow and rounded corners */
+#statistics {
+    box-shadow: rgba(0, 0, 0, 0.15) 0px 15px 25px 15px, rgba(0, 0, 0, 0.05) 0px 5px 10px; /* multiple box shadows */
+    border-radius: 50px; /* rounded corners */
+}
+
+/* STATISTICS TITLE GRADIENT BACKGROUND */
+
+/* gradient background for statistics title */
+#statistics-title {
+    background-image: linear-gradient(#f6323e, #b32933); /* gradient from red to dark red */
+    border-radius: 20px; /* rounded corners */
+}
+
+/* SP VISION CSS */
+
+/* VISION IMAGE BACKGROUND DESIGN */
+
+/* background styling for mission and vision image */
+#img-mission-vision {
+    background-color: #44b09e; /* base background color */
+    background-image: linear-gradient(315deg, #44b09e 0%, #e0d2c7 74%); /* gradient background */
+    border-radius: 30px; /* rounded corners */
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px; /* box shadow */
+}
+
+/* VISION SUBTITLE TEXT SHADOW */
+
+/* text shadow for vision subtitle */
+#vision-subtitle {
+    text-shadow: 0.7px 0.7px grey; /* grey text shadow */
+}
+
+/* SP70 MEMORIES PHOTO STYLING */
+
+/* styling for SP70 memories photos with shadow and rounded corners */
+.sp70-memories-photo {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 6px 12px -2px, rgba(0, 0, 0, 0.3) 0px 3px 7px -3px; /* shadow effect */
+    border-radius: 10px; /* rounded corners */
+}
+
+/* NO LIST STYLE */
+
+/* removes bullet points from lists */
+.no-list-style {
+    list-style-type: none; /* no bullet points or numbers */
+}
+
+/* SP70 MEMORIES CONTAINER BACKGROUND */
+
+/* background gradient for SP70 memories container */
+#sp70-memories-container {
+    background-image: linear-gradient(120deg, #84fab0 0%, #8fd3f4 100%); /* gradient background */
+}
