@@ -108,62 +108,135 @@
 				</div>
 			</div>
 		</nav>
+		<!-- thin white line under navbar -->
 		<div style="height: 1px; background-color: #e2e3e5;"></div>
 	</header>
 
+	<!-- hero-image container -->
 	<div class="container-fluid p-0 col-12" id="hero-image-container">
+		<!-- original image and cropped one, original for large view-widths and cropped for small ones -->
 		<div class="image-wrapper">
-		  <img src="media/images/achievement-plans/hero-image.jpeg" class="col-12 d-block d-lg-none" alt="">
-		  <img src="media/images/achievement-plans/hero-image-cropped.jpeg" class="col-12 d-none d-lg-block" alt="">
+		  <img src="media/images/achievement-plans/hero-image.jpeg" class="col-12 d-block d-lg-none" alt="Hero Background">
+		  <img src="media/images/achievement-plans/hero-image-cropped.jpeg" class="col-12 d-none d-lg-block" alt="Hero Background">
 		  <div class="hero-title text-center d-flex align-items-end">
-			<h1 class="roboto-slab text-nowrap">With <i><img src="media/images/achievement-plans/sp-logo.png" style="width: 4rem; margin-bottom: 1rem;" alt=""></i> 
-				It's <i><img src="media/images/achievement-plans/sp-s.png" style="width: 2rem; margin-bottom: 1rem;" alt=""></i>o&nbsp;
-				<i><img src="media/images/achievement-plans/sp-p.png" style="width: 1.8rem; margin-bottom: 1rem;" alt=""></i>ossible.</h1>
+			<h1 class="roboto-slab text-nowrap">With <i><img src="media/images/achievement-plans/sp-logo.png" style="width: 4rem; margin-bottom: 1rem;" alt="SP"></i><br>
+				It's <i><img src="media/images/achievement-plans/sp-s.png" style="width: 2rem; margin-bottom: 1rem;" alt="S"></i>o&nbsp;
+				<i><img src="media/images/achievement-plans/sp-p.png" style="width: 1.8rem; margin-bottom: 1rem;" alt="P"></i>ossible.</h1>
 		  </div>
 		</div>
 	  </div>
 
-	<div class="container-fluid col-12 col-md-8 col-lg-6">
+	  <!-- CCA section -->
+	  <h1 class="text-center roboto-slab sp-color-text mt-5 mb-4">CCA Clubs</h1>
+	  <p class="container-fluid text-center col-10 col-lg-8 fs-sm-6-fs-md-5 fw-semibold mb-4">Throughout decades, SP developed prosperous CCA clubs, where students will always
+		  have room to
+		  grow. We hone our students' cocurricular, networking, and sports skills here, making them ready to venture into
+		  the real world as independent and competent individuals in every aspect.</p>
+		  <!-- CCA cards with click links and animation, 1 card for sm, 2 for md and 3 for lg per row -->
+	  	<div class="container-fluid col-7 col-md-10 col-lg-8 mb-5">
+		  <div class="row g-4 row-cols-1 row-cols-md-2 row-cols-lg-3 d-flex justify-content-center align-items-center">
+			  <div class="col">
+				  <a href="https://www.sp.edu.sg/ccas/our-clubs/constituent-clubs">
+					  <div class="card club-card">
+						  <img src="media/images/achievement-plans/constituent-clubs.jpg" class="card-img-top" alt="Constituent Clubs">
+						  <div class="card-body">
+							  <h5 class="card-title text-center">Constituent Clubs</h5>
+						  </div>
+					  </div>
+			  </div></a>
+			  <div class="col">
+				  <a href="https://www.sp.edu.sg/ccas/our-clubs/arts-culture">
+					  <div class="card club-card">
+						  <img src="media/images/achievement-plans/arts-culture.jpg" class="card-img-top" alt="Arts & Culture">
+						  <div class="card-body">
+							  <h5 class="card-title text-center">Arts & Culture</h5>
+						  </div>
+					  </div>
+				  </a>
+			  </div>
+			  <div class="col">
+				  <a href="https://www.sp.edu.sg/ccas/our-clubs/service-learning">
+					  <div class="card club-card">
+						  <img src="media/images/achievement-plans/service-learning.jpg" class="card-img-top" alt="Service Learning">
+						  <div class="card-body">
+							  <h5 class="card-title text-center">Service Learning</h5>
+						  </div>
+					  </div>
+				  </a>
+			  </div>
+			  <a href="https://www.sp.edu.sg/ccas/our-clubs/special-interests">
+				  <div class="col">
+					  <div class="card club-card">
+						  <img src="media/images/achievement-plans/special-interests.jpg" class="card-img-top" alt="Special Interests">
+						  <div class="card-body">
+							  <h5 class="card-title text-center">Special Interests</h5>
+						  </div>
+					  </div>
+				  </div>
+			  </a>
+			  <div class="col">
+				  <a href="https://www.sp.edu.sg/ccas/our-clubs/sports-adventure">
+					  <div class="card club-card">
+						  <img src="media/images/achievement-plans/sports-adventure.jpg" class="card-img-top" alt="Sports & Adventure">
+						  <div class="card-body">
+							  <h5 class="card-title text-center text-nowrap">Sports & Adventure</h5>
+						  </div>
+					  </div>
+				  </a>
+			  </div>
+		  </div>
+	  </div>
+	  </div>
+
+	  <h1 class="text-center sp-color-text roboto-slab mb-2">SP Make it Possible!</h1>
+	  <p class="container-fluid text-center col-10 fs-5 fw-semibold mb-3">From captaining ships to building a sustainable future, Singapore Polytechnic opens doors to your wildest dreams.</p>
+	  <p class="container-fluid text-center col-10 fs-sm-6-fs-md-5 fw-semibold sp-color-text roboto-slab" id="sp-video-checkout-text"><i class="bi bi-arrow-down"></i>&ensp;Check out how SP students achieve their dreams.&ensp;<i class="bi bi-arrow-down"></i></p>
+	<div class="container-fluid col-12 col-md-8 col-lg-6 p-0 mb-5">
 	<iframe src="https://www.youtube.com/embed/w_lFlr2aR0w" class="col-12" id="so-possible-video"></iframe>
 	</div>
 
-	  <div class="container-fluid col-10 col-md-8 col-lg-5">
+	<!-- TIE Section -->
+	<h1 class="text-center sp-color-text roboto-slab mb-3">Technology, Innovation & Enterprise (TIE)</h1>
+	<!-- Intro text -->
+	<p class="container-fluid text-center col-12 col-md-8 fs-sm-6-fs-md-5 mb-5 fw-semibold">Technology & Innovation Centres (TIC) promotes multi-disciplinary & cross-functional projects between Singapore Polytechnic and its business and industry partners. It positions Singapore Polytechnic as the source of technology, innovation and information for the business and industry partners. In the long run, this enables the business and industry partners to move up the value-chain.</p>
+	  <div class="container-fluid col-10 col-md-8 col-lg-5 mb-4">
+		<!-- 6 hexagons with texts under,  3 columns with justify-content center -->
 		<div class="row">
 			<div class="col-4 d-flex justify-content-center align-items-center">
 				<div>
-				<img src="media/images/achievement-plans/5g-aiot-centre-icon.png" class="col-12" alt="" id="center-icon">
+				<a href="https://www.sp.edu.sg/industry/5g-aiot"><img src="media/images/achievement-plans/5g-aiot-centre-icon.png" class="col-12 tie-center" alt="5g AIoT" id="center-icon"></a>
 				<h6 class="text-center roboto-slab my-md-3">5G & AIoT<span class="d-none d-md-block">Center</span></h6>
-				<img src="media/images/achievement-plans/amc-centre-icon.png" class="col-12" alt="">
+				<a href="https://www.sp.edu.sg/industry/amc"><img src="media/images/achievement-plans/amc-centre-icon.png" class="col-12 tie-center" alt="AMC"></a>
 				<h6 class="text-center roboto-slab mt-md-3"><span class="d-none d-md-block">Advanced Manufacuturing<br>Center</span> (AMC)</h6>
 				</div>
 			</div>
 			<div class="col-4">
-				<img src="media/images/achievement-plans/amtc-centre-icon.png" class="col-12" alt="">
+				<a href="https://www.sp.edu.sg/industry/amtc"><img src="media/images/achievement-plans/amtc-centre-icon.png" class="col-12 tie-center" alt="AMTC"></a>
 				<h6 class="text-center roboto-slab mt-md-1"><span class="d-none d-md-block">Advanced Materials<br>Technology Center</span> (AMTC)</h6>
 				<div id="center-placeholder"></div>
-				<img src="media/images/achievement-plans/cctc-centre-icon.png" class="col-12" alt="">
+				<a href="https://www.sp.edu.sg/industry/cctc"><img src="media/images/achievement-plans/cctc-centre-icon.png" class="col-12 tie-center" alt="CCTC"></a>
 				<h6 class="text-center roboto-slab mt-md-3"><span class="d-none d-md-block">Consumer Chemicals<br>Technology Centre</span> (CCTC)</h6>
 			</div>
 			<div class="col-4 d-flex justify-content-center align-items-center">
 				<div>
-				<img src="media/images/achievement-plans/firc-centre-icon.png" class="col-12" alt="">
-				<h6 class="text-center roboto-slab my-md-3"><span class="d-none d-md-block">Food Innovation &<br>Resource Center</span> (FIRC)</h6>
-				<img src="media/images/achievement-plans/cems-centre-icon.png" class="col-12" alt="">
+				<a href="https://www.sp.edu.sg/industry/firc"><img src="media/images/achievement-plans/firc-centre-icon.png" class="col-12 tie-center" alt="FIRC"></a>
+				<h6 class="text-center roboto-slab my-md-3"><span class="d-none d-md-block">Food Innovation Center</span>(FIRC)</h6>
+				<a href="https://www.sp.edu.sg/industry/cems"><img src="media/images/achievement-plans/cems-centre-icon.png" class="col-12 tie-center" alt="CEMS"></a>
 				<h6 class="text-center roboto-slab mt-md-3"><span class="d-none d-md-block">Center of Excellence<br>In Maritime Safety</span> (CEMS)</h6>
 				</div>
 			</div>
 		</div>
 	  </div>
 
-	<div class="container-fluid p-0">
+	<div class="container-fluid d-block">
 		<div class="row no-gutters">
 			<div class="col-12 video-container">
-				<video autoplay loop muted class="d-none d-md-block">
+				<video autoplay loop muted class="d-none d-md-block" style="width: 100%; height: auto;">
 					<source src="media/videos/achievement-plans/sustainability-banner-video.mp4" type="video/mp4">
 					<!-- Include other video sources here for compatibility -->
 					Your browser does not support the video tag.
 				</video>
-				<video autoplay loop muted class="d-md-none">
+				<video autoplay loop muted class="d-md-none" style="width: 100%; height: auto;"">
 					<source src="media/videos/achievement-plans/sustainability-banner-video-cropped.mp4" type="video/mp4">
 					<!-- Include other video sources here for compatibility -->
 					Your browser does not support the video tag.
@@ -176,12 +249,20 @@
 			</div>
 		</div>
 	</div>
+	<div class="container-fluid col-12 px-0 mt-1 py-4 fw-semibold" id="sustainability-background">
+		<h2 class="container-fluid col-10 col-8-md col-lg-7 col-xl-6 text-center roboto-slab text-white p-2 mb-4 rounded-pill" id="sustainability-title">SP's Actions Towards <span style="color: rgb(14, 189, 14);">Sustainability</span></h2>
+		<p class="card rounded container-fluid col-11 col-md-10 col-lg-8 fs-sm-6-fs-md-5 lh-base bg-white p-4 fw-semibold">SP is paving its pioneer road towards sustainability journey and our collective commitment to reduce damage on the environment is impactful.<br><br>
+			SP’s 60-30 Vision is to reduce our greenhouse gas emissions by 60% by 2030, from the baseline year of 2022.<br><br>
+			Together, as a community, we believe we can achieve our 60-30 Vision by 2030.</p>
+	</div>
 
-<!-- future-ready section -->
+
+	<!-- future-ready section -->
 	<article class="future-ready">
-		<h6 class=" container-fluid col-10 col-md-8 text-start my-3 text-center" id="future-ready-text">Becoming “future-ready” is at the core of SP's DNA, expressed in our mission of being life-ready, work-ready and world-ready. Here's an extract from our commemorative book outlining three areas where SP is leading the way forward:</h6>
+		<h2 class="container-fluid text-center roboto-slab sp-color-text my-4">Training Students To Be "Future Ready"</h2>
+		<h6 class=" container-fluid col-10 col-md-8 text-start mt-3 text-center fs-sm-6-fs-md-5">Becoming “future-ready” is at the core of SP's DNA, expressed in our mission of being life-ready, work-ready and world-ready. Here's an extract from our commemorative book outlining three areas where SP is leading the way forward:</h6>
 		<!-- displays carousal of three cards in view-widths smaller than large -->
-		<div class="container-fluid col-12 col-sm-12 col-md-10 d-lg-none">
+		<div class="container-fluid col-12 col-sm-12 col-md-10 d-lg-none mt-0 d-flex justify-content-center align-items-start">
 			<div class="row">
 				<div class="col-2 mx-auto my-auto">
 					<button class="carousel-button carousel-control-prev mx-auto" id="future-ready-carousel-control-prev" type="button"
@@ -198,7 +279,7 @@
 						<div class="carousel-inner">
 							<div class="carousel-item active">
 								<div class="card">
-									<img src="media/images/index/personal-work-life.jpg" class="card-img-top" alt="Personal/Work Life">
+									<img src="media/images/achievement-plans/personal-work-life.jpg" class="card-img-top" alt="Personal/Work Life">
 									<div class="card-body">
 										<h5 class="card-title roboto-slab text-center">Personal/Work Life</h5>
 										<p class="card-text">Personal and work life are undergoing fundamental change.
@@ -215,7 +296,7 @@
 							</div>
 							<div class="carousel-item">
 								<div class="card">
-									<img src="media/images/index/industry-disruptions.jpg" class="card-img-top" alt="Industry disruptions">
+									<img src="media/images/achievement-plans/industry-disruptions.jpg" class="card-img-top" alt="Industry disruptions">
 									<div class="card-body">
 										<h5 class="card-title roboto-slab text-center">Industry Disruptions</h5>
 										<p class="card-text">The whole universe of industry has become much more
@@ -233,7 +314,7 @@
 							</div>
 							<div class="carousel-item">
 								<div class="card">
-									<img src="media/images/index/global-shifts.jpg" class="card-img-top" alt="Global shifts">
+									<img src="media/images/achievement-plans/global-shifts.jpg" class="card-img-top" alt="Global shifts">
 									<div class="card-body">
 										<h5 class="card-title roboto-slab text-center">Global Shifts</h5>
 										<p class="card-text">Of all the global issues facing the world, climate change
@@ -266,17 +347,15 @@
 					</button>
 				</div>
 			</div>
-
-
-
 		</div>
 
 		<!-- displays cards with columns grid in view-widths of large and above -->
-		<div class="container mx-auto d-none d-lg-block">
+		<div class="container mx-auto d-none d-lg-block mb-5">
+			<!-- Three cards with 1 card in sm, 2 in md, and 3 in lg -->
 			<div class="row gx-5 gy-5">
-				<div class="col-lg-6 col-xl-4">
+				<div class="col-lg-6 col-xl-4 d-flex justify-content-center">
 					<div class="card">
-						<img src="media/images/index/personal-work-life.jpg" class="card-img-top" alt="Personal Work/ Life">
+						<img src="media/images/achievement-plans/personal-work-life.jpg" class="card-img-top" alt="Personal Work/ Life">
 						<div class="card-body">
 							<h5 class="card-title roboto-slab text-center">Personal Work/Life</h5>
 							<p class="card-text">Personal and work life are undergoing fundamental change. Being
@@ -293,7 +372,7 @@
 				</div>
 				<div class="col-lg-6 col-xl-4">
 					<div class="card">
-						<img src="media/images/index/industry-disruptions.jpg" class="card-img-top" alt="Industry disruptions">
+						<img src="media/images/achievement-plans/industry-disruptions.jpg" class="card-img-top" alt="Industry disruptions">
 						<div class="card-body">
 							<h5 class="card-title roboto-slab text-center">Industry Disruptions</h5>
 							<p class="card-text">The whole universe of industry has become much more disruptive, with
@@ -313,7 +392,7 @@
 					<div class="row d-flex justify-content-center">
 						<div class="col-6 col-xl-12">
 							<div class="card">
-								<img src="media/images/index/global-shifts.jpg" class="card-img-top" alt="Global shifts">
+								<img src="media/images/achievement-plans/global-shifts.jpg" class="card-img-top" alt="Global shifts">
 								<div class="card-body">
 									<h5 class="card-title roboto-slab text-center">Global Shifts</h5>
 									<p class="card-text">Of all the global issues facing the world, climate change tops
@@ -417,4 +496,26 @@
 </html>
 
 
-<!-- https://images.unsplash.com/photo-1483444308400-fb9510501d23?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww -->
+
+<!-- Image Sources:
+
+1. Hero background: from "SP" https://images.unsplash.com/photo-1483444308400-fb9510501d23?fm=jpg&q=60&w=3000&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGJhY2slMjBiYWNrZ3JvdW5kfGVufDB8fDB8fHww
+2. Constituent Clubs: from "SP" https://www.sp.edu.sg/images/default-source/sd/our-clubs/navigation-grid/constituent-clubs.jpg?sfvrsn=b1d13b56_2
+3. Arts and Culture: from "SP" https://www.sp.edu.sg/images/default-source/sd/our-clubs/navigation-grid/arts-culture.jpg?sfvrsn=66092aa7_2
+4. Service Learning: from "SP" https://www.sp.edu.sg/images/default-source/sd/our-clubs/navigation-grid/service-learning.jpg?sfvrsn=1b4385a7_2
+5. Special Intersts: from "SP" https://www.sp.edu.sg/images/default-source/sd/our-clubs/special-interests/special-interests.jpg?sfvrsn=e7932ecf_2
+6. Sports and Adventure: from "SP" https://www.sp.edu.sg/images/default-source/sd/our-clubs/navigation-grid/sports-adventure.jpg?sfvrsn=d5b6c8b2_2
+7. SP So Possible Video: from "SP Youtube" https://youtu.be/w_lFlr2aR0w
+8. 5G and AIoT: from "SP" https://www.sp.edu.sg/images/default-source/sp-industry/tie/5g-aiot-centre-isometric.png?sfvrsn=4efdbf4c_2
+9. AMC: from "SP" https://www.sp.edu.sg/images/default-source/sp-industry/amc-centre-icon.png?sfvrsn=e395e785_2
+10. AMTC: from "SP" https://www.sp.edu.sg/images/default-source/sp-industry/tie/amtc-centre-icon.png?sfvrsn=e55be0c4_2
+11. CCTC: from "SP" https://www.sp.edu.sg/images/default-source/sp-industry/tie/cctc-centre-isometric-1.png?sfvrsn=a18e6699_2
+12. FIRC: from "SP" https://www.sp.edu.sg/images/default-source/sp-industry/tie/firc-centre-icon.png?sfvrsn=2f346557_2
+13. CEMS: from "SP" https://www.sp.edu.sg/images/default-source/sp-industry/tie/cems-centre-icon.png?sfvrsn=598415e7_2
+14. Sustanability Banner Video: from "SP Sustainability Matters" https://www.sp.edu.sg/sp/about-sp/why-sp/sustainability-matters
+15. Sustainability section background: from "Leonardo UK" https://uk.leonardo.com/o/adaptive-media/image/16058969/h_1024/Sustainability-green-icons-banner_1440760.jpg
+16. Personal work/life photo: from "SP70" https://www.sp.edu.sg/images/default-source/default-album/personal-work-life.jpg
+17. Industry Disruption photo: from "SP70" https://www.sp.edu.sg/images/default-source/default-album/industry-disruption.jpg
+18. Global Shifts photo: from "SP70" https://www.sp.edu.sg/images/default-source/default-album/global-shifts.jpg
+
+-->
